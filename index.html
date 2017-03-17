@@ -8,15 +8,34 @@
     <form action="https://formspree.io/adam.hankus@gmail.com" method="POST">
         <label for="imie">Imię</label><br />
         <input type="text" name="imie" id="imie"><br />
+        
         <label for="nazwisko">Nazwisko:</label><br />
         <input type="text" name="nazwisko" id="nazwisko"><br />
+        
         <label for="email">email:</label><br />
         <input type="email" name="email" id="email"><br />
+        
         <label for="telefon">Telefon:</label><br />
         <input type="text" name="telefon" id="telefon"><br />
+        
+        <label for="miasto">Miasto:</label><br />
+        <select name="miasto" id="miasto">
+          <option value="danzig">Gdańsk</option>
+          <option value="krakau">Kraków</option>
+          <option value="warschau" selected>Warszawa</option>
+        </select><br />
+        
+        <label for="plec">Płeć:</label><br />
+        <input type="radio" name="plec" value="m">Mężczyzna<br />
+        <input type="radio" name="plec" value="k">Kobieta<br />
+        <input type="radio" name="plec" value="i">Inne<br />
+
         <label for="message">Wiadomość:</label><br />
-        <textarea maxlength="512" name="message" id="message" placeholder="Tu wpisz swoją Wiadomość..." cols="50" rows="5"></textarea>
-        <input type="submit" value="Send">
+        <textarea maxlength="512" name="message" id="message" placeholder="Tu wpisz swoją Wiadomość..." cols="50" rows="5"></textarea><br />
+        
+        <input type="checkbox" name="giodo" value="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych<br />
+        
+        <input type="submit" value="Wyślij">
     </form>
 </body>
 </html>
